@@ -1,0 +1,22 @@
+# Ambiente: Python 3.13
+# Instalar com: pip install -r src-pln/requirements.txt
+
+# Dados e visualização
+pandas==3.1.0
+numpy==2.5.4
+matplotlib==3.11.2
+
+# Linha de base de sentimentos (TF-IDF + Regressão Logística)
+scikit-learn==1.9.1
+nltk==3.10.4
+
+# Notebooks
+ipykernel==7.4.0
+
+# --- Etapas futuras (descomente quando for usar; torch/transformers são pesados) ---
+# spacy                  # NER (depois: python -m spacy download pt_core_news_lg)
+# torch                  # LSTM bidirecional / BERTimbau
+# transformers           # fine-tuning do BERTimbau
+# datasets
+# google-api-python-client  # YouTube Data API v3
+# streamlit              # aplicação / chatbot
