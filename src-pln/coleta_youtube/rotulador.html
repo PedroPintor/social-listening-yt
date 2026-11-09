@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rotulador de Sentimento</title>
+<style>
+  :root {
+    --bg: #f6f7f9; --card: #ffffff; --tx: #1d2330; --tx2: #5b6475; --borda: #dfe3ea; --realce: #eef2ff;
+    --azul: #3b5bdb; --pos: #2b8a3e; --neu: #6c757d; --neg: #c92a2a; --mis: #b35c00; --fora: #7048a8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #14171d; --card: #1d222b; --tx: #e8ebf0; --tx2: #a0a8b8; --borda: #333a47; --realce: #262d45;
+      --azul: #7b93ff; --pos: #51cf66; --neu: #adb5bd; --neg: #ff6b6b; --mis: #ffa94d; --fora: #b197fc; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--tx); font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  header { background: var(--card); border-bottom: 1px solid var(--borda); padding: 12px 16px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+  header h1 { font-size: 18px; margin: 0 12px 0 0; }
+  header label { font-size: 14px; color: var(--tx2); display: flex; gap: 6px; align-items: center; }
+  input[type=text] { font: inherit; padding: 6px 10px; border: 1px solid var(--borda); border-radius: 6px; background: var(--bg); color: var(--tx); width: 160px; }
+  button { font: inherit; cursor: pointer; border: 1px solid var(--borda); background: var(--card); color: var(--tx); border-radius: 8px; padding: 8px 12px; }
+  button:hover:not(:disabled) { border-color: var(--azul); }
+  button:disabled { opacity: .45; cursor: default; }
+  .primario { background: var(--azul); color: #fff; border-color: var(--azul); }
+  .progresso { flex: 1 1 220px; display: flex; gap: 10px; align-items: center; font-size: 14px; color: var(--tx2); }
+  .barra { flex: 1; height: 8px; background: var(--borda); border-radius: 4px; overflow: hidden; }
+  .barra > div { height: 100%; width: 0; background: var(--azul); transition: width .2s; }
+  main { display: grid; grid-template-columns: minmax(0, 1fr) 360px; gap: 16px; padding: 16px; max-width: 1280px; margin: 0 auto; }
+  @media (max-width: 900px) { main { grid-template-columns: 1fr; } }
+  .painel { background: var(--card); border: 1px solid var(--borda); border-radius: 12px; padding: 16px; }
+  .meta { display: flex; flex-wrap: wrap; gap: 8px; font-size: 13px; color: var(--tx2); margin-bottom: 8px; }
+  .chip { display: inline-block; padding: 2px 8px; border-radius: 999px; background: var(--realce); font-size: 12px; font-weight: 600; }
+  .contexto { font-size: 14px; color: var(--tx2); border-left: 3px solid var(--borda); padding-left: 10px; margin: 8px 0 16px; }
+  .texto { font-size: 21px; line-height: 1.55; white-space: pre-wrap; overflow-wrap: anywhere; min-height: 3em; margin: 0 0 20px; }
+  .botoes { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; }
+  @media (max-width: 600px) { .botoes { grid-template-columns: 1fr 1fr; } }
+  .rot { padding: 12px 6px; font-weight: 600; border-width: 2px; }
+  .rot kbd { display: block; font-size: 12px; font-weight: 400; color: var(--tx2); }
+  .rot.ativo { color: #fff; }
+  .positivo { border-color: var(--pos); } .positivo.ativo { background: var(--pos); }
+  .neutro { border-color: var(--neu); } .neutro.ativo { background: var(--neu); }
+  .negativo { border-color: var(--neg); } .negativo.ativo { background: var(--neg); }
+  .misto { border-color: var(--mis); } .misto.ativo { background: var(--mis); }
+  .nao_sobre_produto { border-color: var(--fora); } .nao_sobre_produto.ativo { background: var(--fora); }
+  .nav { display: flex; gap: 8px; margin-top: 12px; flex-wrap: wrap; align-items: center; }
+  .nav .dica { font-size: 13px; color: var(--tx2); margin-left: auto; }
+  .aviso { padding: 10px 12px; border-radius: 8px; background: var(--realce); font-size: 14px; margin-top: 12px; }
+  aside { display: flex; flex-direction: column; gap: 16px; min-width: 0; }
+  details summary { cursor: pointer; font-weight: 600; }
+  .guia { font-size: 14px; }
+  .guia dt { font-weight: 600; margin-top: 8px; }
+  .guia dd { margin: 0 0 0 0; color: var(--tx2); }
+  .lista-topo { display: flex; justify-content: space-between; align-items: center; gap: 8px; margin-bottom: 8px; }
+  .lista-topo h2 { font-size: 15px; margin: 0; }
+  select { font: inherit; font-size: 13px; padding: 4px; border-radius: 6px; border: 1px solid var(--borda); background: var(--bg); color: var(--tx); }
+  ul.lista { list-style: none; margin: 0; padding: 0; max-height: 46vh; overflow-y: auto; }
+  ul.lista li { display: flex; gap: 8px; align-items: baseline; padding: 6px 8px; border-radius: 6px; cursor: pointer; font-size: 13px; }
+  ul.lista li:hover, ul.lista li.atual { background: var(--realce); }
+  ul.lista .id { color: var(--tx2); font-variant-numeric: tabular-nums; flex: none; }
+  ul.lista .trecho { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; flex: 1; min-width: 0; }
+  .tag { flex: none; font-size: 11px; font-weight: 700; padding: 1px 6px; border-radius: 4px; color: #fff; }
+  .tag.positivo { background: var(--pos); } .tag.neutro { background: var(--neu); } .tag.negativo { background: var(--neg); }
+  .tag.misto { background: var(--mis); } .tag.nao_sobre_produto { background: var(--fora); }
+  .vazio { color: var(--tx2); font-size: 14px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Rotulador de Sentimento</h1>
+  <label>Amostra <input type="file" id="arquivo" accept=".csv,text/csv"></label>
+  <label>Quem rotula <input type="text" id="nome" placeholder="ex.: pedro" autocomplete="off"></label>
+  <div class="progresso"><div class="barra"><div id="barra"></div></div><span id="contagem">0 / 0</span></div>
+  <button id="exportar" class="primario" disabled>Exportar CSV</button>
+</header>
+
+<main>
+  <section class="painel" id="area">
+    <div id="inicio">
+      <p><strong>Como usar:</strong> escolha o arquivo <code>amostra_rotulagem.csv</code> e digite seu nome. O progresso é salvo automaticamente neste navegador (por nome e por amostra). Ao terminar, clique em <em>Exportar CSV</em>.</p>
+      <p class="vazio">Cada pessoa rotula sozinha, sem conversar com a outra até exportar (o kappa mede a concordância independente).</p>
+    </div>
+    <div id="item" hidden>
+      <div class="meta"><span class="chip" id="m-tipo"></span><span class="chip" id="m-produto"></span><span id="m-id"></span><span id="m-data"></span><span id="m-likes"></span></div>
+      <div class="contexto" id="m-contexto"></div>
+      <p class="texto" id="m-texto"></p>
+      <div class="botoes" id="botoes"></div>
+      <div class="nav">
+        <button id="anterior">← Anterior</button>
+        <button id="proximo">Próximo →</button>
+        <button id="desfazer" disabled>Desfazer (Ctrl+Z)</button>
+        <span class="dica">Teclas 1–5 rotulam · ← → navegam</span>
+      </div>
+      <div class="aviso" id="msg" hidden></div>
+    </div>
+  </section>
+
+  <aside>
+    <details class="painel guia" open>
+      <summary>Guia de rotulagem</summary>
+      <p>Rotule o <strong>sentimento sobre o produto</strong> (ou a marca) indicado no topo. O título do vídeo é só contexto.</p>
+      <dl>
+        <dt>1 · Positivo</dt><dd>Elogio, satisfação, recomendação, intenção de compra animada.</dd>
+        <dt>2 · Neutro</dt><dd>Pergunta, informação ou fato sem opinião (“quanto custa?”, “chega dia 20”). Na dúvida entre neutro e fraco, prefira neutro.</dd>
+        <dt>3 · Negativo</dt><dd>Crítica, reclamação, defeito, arrependimento, “caro demais”.</dd>
+        <dt>4 · Misto</dt><dd>Elogio <em>e</em> crítica relevantes ao mesmo produto (“câmera ótima, bateria horrível”). Não use se um lado for só um detalhe.</dd>
+        <dt>5 · Não é sobre o produto</dt><dd>Fala do vídeo, do canal, de outra coisa, piada sem relação, spam que escapou do filtro.</dd>
+        <dt>Ironia e sarcasmo</dt><dd>Rotule pelo sentido real, não pelas palavras: “perfeito, travou 3 vezes hoje” = negativo.</dd>
+        <dt>Comparações</dt><dd>Vale o que se diz do produto do topo (“o concorrente é bem melhor” = negativo para ele).</dd>
+      </dl>
+    </details>
+    <div class="painel">
+      <div class="lista-topo">
+        <h2>Rotulados</h2>
+        <select id="filtro" aria-label="Filtrar lista"><option value="">todos</option></select>
+      </div>
+      <ul class="lista" id="lista"><li class="vazio">Nada rotulado ainda.</li></ul>
+    </div>
+  </aside>
+</main>
+
+<script>
+const ROTULOS = [
+  { v: "positivo", nome: "Positivo", curto: "Pos" },
+  { v: "neutro", nome: "Neutro", curto: "Neu" },
+  { v: "negativo", nome: "Negativo", curto: "Neg" },
+  { v: "misto", nome: "Misto", curto: "Misto" },
+  { v: "nao_sobre_produto", nome: "Não é sobre o produto", curto: "Fora" },
+];
+const NOME_ROTULO = Object.fromEntries(ROTULOS.map(r => [r.v, r.nome]));
+const CURTO = Object.fromEntries(ROTULOS.map(r => [r.v, r.curto]));
+const $ = id => document.getElementById(id);
+
+let itens = [], assinatura = "", nome = "";
+let rotulos = {}, historico = [], atual = 0;
+
+// ---------- CSV (RFC 4180: aspas, vírgulas e quebras de linha dentro de campos)
+function lerCSV(texto) {
+  texto = texto.replace(/^﻿/, "");
+  const linhas = []; let campo = "", linha = [], aspas = false;
+  for (let i = 0; i < texto.length; i++) {
+    const c = texto[i];
+    if (aspas) {
+      if (c === '"') { if (texto[i + 1] === '"') { campo += '"'; i++; } else aspas = false; }
+      else campo += c;
+    } else if (c === '"') aspas = true;
+    else if (c === ",") { linha.push(campo); campo = ""; }
+    else if (c === "\n" || c === "\r") {
+      if (c === "\r" && texto[i + 1] === "\n") i++;
+      linha.push(campo); linhas.push(linha); linha = []; campo = "";
+    } else campo += c;
+  }
+  if (campo !== "" || linha.length) { linha.push(campo); linhas.push(linha); }
+  const cab = linhas.shift() || [];
+  return linhas.filter(l => l.some(x => x.trim() !== "")).map(l => Object.fromEntries(cab.map((h, i) => [h.trim(), l[i] ?? ""])));
+}
+const csvCampo = s => /[",\n\r]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s;
+
+// ---------- armazenamento local (pode falhar em janela privada: tudo com try/catch)
+const chave = () => `rotulador:${assinatura}:${nome.toLowerCase()}`;
+function salvar() {
+  if (!nome || !assinatura) return;
+  try { localStorage.setItem(chave(), JSON.stringify({ rotulos, historico, atual })); } catch (e) { /* sem armazenamento */ }
+}
+function carregar() {
+  rotulos = {}; historico = []; atual = 0;
+  try {
+    const s = JSON.parse(localStorage.getItem(chave()) || "null");
+    if (s) { rotulos = s.rotulos || {}; historico = s.historico || []; atual = Math.min(s.atual || 0, itens.length - 1); }
+  } catch (e) { /* ignora */ }
+  try { localStorage.setItem("rotulador:ultimo_nome", nome); } catch (e) {}
+}
+
+// ---------- ações
+function rotular(v) {
+  const it = itens[atual]; if (!it) return;
+  historico.push({ id: it.id, anterior: rotulos[it.id] ?? null, idx: atual });
+  rotulos[it.id] = v;
+  irParaProximoPendente();
+  salvar(); render();
+}
+function irParaProximoPendente() {
+  for (let k = 1; k <= itens.length; k++) {
+    const j = (atual + k) % itens.length;
+    if (!(itens[j].id in rotulos)) { atual = j; return; }
+  }
+  // tudo rotulado: fica onde está
+}
+function desfazer() {
+  const h = historico.pop(); if (!h) return;
+  if (h.anterior === null) delete rotulos[h.id]; else rotulos[h.id] = h.anterior;
+  atual = h.idx; salvar(); render();
+}
+function mover(d) { if (!itens.length) return; atual = (atual + d + itens.length) % itens.length; salvar(); render(); }
+
+function exportar() {
+  const linhas = ["id,rotulo", ...itens.filter(it => it.id in rotulos).map(it => csvCampo(it.id) + "," + rotulos[it.id])];
+  const blob = new Blob(["﻿" + linhas.join("\r\n") + "\r\n"], { type: "text/csv;charset=utf-8" });
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = `rotulos_${nome.trim().toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]+/g, "_").replace(/^_|_$/g, "") || "anonimo"}.csv`;
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+}
+
+// ---------- tela
+function render() {
+  const pronto = itens.length && nome;
+  $("inicio").hidden = !!pronto; $("item").hidden = !pronto;
+  const feitos = itens.filter(it => it.id in rotulos).length;
+  $("contagem").textContent = `${feitos} / ${itens.length}`;
+  $("barra").style.width = itens.length ? (100 * feitos / itens.length) + "%" : 0;
+  $("exportar").disabled = !pronto || !feitos;
+  $("desfazer").disabled = !historico.length;
+  if (!pronto) {
+    $("inicio").querySelector(".vazio").textContent = !itens.length ? "Carregue a amostra para começar." : "Digite seu nome para começar.";
+    return;
+  }
+  const it = itens[atual];
+  $("m-tipo").textContent = it.tipo === "título" ? "Título de vídeo" : "Comentário";
+  $("m-produto").textContent = it.produto;
+  $("m-id").textContent = `#${it.id} · item ${atual + 1} de ${itens.length}`;
+  $("m-data").textContent = it.data_video ? `vídeo de ${it.data_video}` : "";
+  $("m-likes").textContent = it.likes ? `${it.likes} curtidas` : "";
+  $("m-contexto").textContent = it.tipo === "título" ? "Rotule o próprio título abaixo." : `Vídeo: ${it.titulo_video || "(sem título)"}`;
+  $("m-texto").textContent = it.texto;
+  document.querySelectorAll(".rot").forEach(b => b.classList.toggle("ativo", rotulos[it.id] === b.dataset.v));
+  const msg = $("msg");
+  if (feitos === itens.length) { msg.hidden = false; msg.textContent = "Todos os itens foram rotulados. Revise pela lista, se quiser, e exporte o CSV."; }
+  else if (it.id in rotulos) { msg.hidden = false; msg.textContent = `Já rotulado como “${NOME_ROTULO[rotulos[it.id]]}”. Escolha outro rótulo para corrigir.`; }
+  else msg.hidden = true;
+  renderLista();
+}
+function renderLista() {
+  const f = $("filtro").value, ul = $("lista");
+  ul.replaceChildren();
+  const feitos = itens.map((it, i) => [it, i]).filter(([it]) => it.id in rotulos && (!f || rotulos[it.id] === f));
+  if (!feitos.length) { const li = document.createElement("li"); li.className = "vazio"; li.textContent = "Nada aqui ainda."; ul.append(li); return; }
+  for (const [it, i] of feitos) {
+    const li = document.createElement("li");
+    if (i === atual) li.className = "atual";
+    const id = document.createElement("span"); id.className = "id"; id.textContent = it.id;
+    const tag = document.createElement("span"); tag.className = "tag " + rotulos[it.id]; tag.textContent = CURTO[rotulos[it.id]];
+    const tr = document.createElement("span"); tr.className = "trecho"; tr.textContent = it.texto; tr.title = it.texto;
+    li.append(id, tag, tr);
+    li.onclick = () => { atual = i; salvar(); render(); };
+    ul.append(li);
+  }
+}
+
+// ---------- montagem
+ROTULOS.forEach((r, i) => {
+  const b = document.createElement("button");
+  b.className = "rot " + r.v; b.dataset.v = r.v;
+  b.innerHTML = `<kbd>${i + 1}</kbd>`; b.prepend(document.createTextNode(r.nome));
+  b.onclick = () => rotular(r.v);
+  $("botoes").append(b);
+  const o = document.createElement("option"); o.value = r.v; o.textContent = r.nome; $("filtro").append(o);
+});
+$("filtro").onchange = renderLista;
+$("anterior").onclick = () => mover(-1);
+$("proximo").onclick = () => mover(1);
+$("desfazer").onclick = desfazer;
+$("exportar").onclick = exportar;
+
+$("arquivo").onchange = async e => {
+  const arq = e.target.files[0]; if (!arq) return;
+  const lidos = lerCSV(await arq.text());
+  if (!lidos.length || !("id" in lidos[0]) || !("texto" in lidos[0])) { alert("CSV inválido: precisa das colunas id e texto."); return; }
+  itens = lidos;
+  assinatura = `${itens.length}:${itens[0].id}:${itens[itens.length - 1].id}`;
+  if (nome) carregar();
+  render();
+};
+let tNome;
+$("nome").oninput = e => {
+  clearTimeout(tNome);
+  tNome = setTimeout(() => { nome = e.target.value.trim(); if (itens.length && nome) carregar(); render(); }, 300);
+};
+try { const n = localStorage.getItem("rotulador:ultimo_nome"); if (n) { $("nome").value = n; nome = n; } } catch (e) {}
+
+document.addEventListener("keydown", e => {
+  if (e.target.tagName === "INPUT" || e.target.tagName === "SELECT" || $("item").hidden) return;
+  if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "z") { e.preventDefault(); desfazer(); return; }
+  if (e.ctrlKey || e.metaKey || e.altKey) return;
+  const n = Number(e.key);
+  if (n >= 1 && n <= ROTULOS.length) { e.preventDefault(); rotular(ROTULOS[n - 1].v); }
+  else if (e.key === "ArrowLeft") { e.preventDefault(); mover(-1); }
+  else if (e.key === "ArrowRight") { e.preventDefault(); mover(1); }
+});
+render();
+</script>
+</body>
+</html>

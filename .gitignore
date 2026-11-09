@@ -1,4 +1,12 @@
 /cards
 /ideias
-/docs
+/docs/raw
 .venv
+.env
+
+# Etapa 4: embeddings pré-treinados (baixados por src-pln/utils/baixar_embeddings.py) e modelos treinados
+src-pln/data/embeddings/
+src-pln/models/
+
+# Coleta do YouTube: dados brutos, cache e amostras (os termos da API desaconselham redistribuir)
+src-pln/coleta_youtube/dados/
