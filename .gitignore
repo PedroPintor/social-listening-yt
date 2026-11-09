@@ -10,3 +10,7 @@ src-pln/models/
 
 # Coleta do YouTube: dados brutos, cache e amostras (os termos da API desaconselham redistribuir)
 src-pln/coleta_youtube/dados/
+
+# Python e Jupyter
+__pycache__/
+.ipynb_checkpoints/

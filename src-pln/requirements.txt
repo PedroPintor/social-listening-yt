@@ -13,10 +13,22 @@ nltk==3.10.4
 # Notebooks
 ipykernel==7.4.0
 
-# --- Etapas futuras (descomente quando for usar; torch/transformers são pesados) ---
-# spacy                  # NER (depois: python -m spacy download pt_core_news_lg)
-# torch                  # LSTM bidirecional / BERTimbau
-# transformers           # fine-tuning do BERTimbau
+# NER (Etapa 3) — GLiNER2 PT-BR (ottema/gliner2-ptbr)
+# O extra [local] instala transformers, peft e safetensors, necessários para rodar o modelo localmente.
+# torch: versão CPU (pip install torch --index-url https://download.pytorch.org/whl/cpu)
+gliner2[local]==2.1.0
+torch==2.15.0
+
+# Rede neural (Etapa 4) — usa o mesmo torch acima (CPU basta; para GPU, ver o notebook 04)
+# safetensors lê os embeddings do NILC (já vem com gliner2[local], fixado aqui porque o
+# utils/baixar_embeddings.py usa diretamente)
+safetensors==0.8.0
+
+# Coleta do YouTube (src-pln/coleta_youtube/) — chave lida do .env
+requests==2.32.5
+python-dotenv==1.2.2
+
+# --- Etapas futuras (descomente quando for usar) ---
+# transformers           # fine-tuning do BERTimbau (já vem com gliner2[local])
 # datasets
-# google-api-python-client  # YouTube Data API v3
 # streamlit              # aplicação / chatbot
