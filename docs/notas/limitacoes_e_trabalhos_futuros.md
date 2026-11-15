@@ -51,4 +51,8 @@ Amostra rotulada: 350 itens (300 comentários e 50 títulos), rotulados de forma
 
 **Limite.** Muitos comentários relevantes não citam o nome do produto ("a bateria dura quanto?", "comprei ontem e chegou riscado"). O filtro por NER deixa esses comentários de fora, então "não cita" não significa "não é sobre o produto".
 
+**Evidência** (notebook `05c_fluxo_do_app.ipynb`, 174 comentários com gabarito):
+- **O NER não filtra.** O GLiNER2 acha alguma marca, produto ou empresa em ~85% dos comentários, e só ~50% dos que passam são sobre o produto, a mesma proporção de não filtrar. Isso vale para todos os limiares e categorias testados. Comentários do YouTube citam outras marcas, o youtuber e objetos comuns o tempo todo.
+- **Buscar o nome do produto é preciso, mas perde muito.** 91% dos comentários que citam o nome (ou apelidos) são sobre o produto, mas só 36% dos comentários sobre o produto citam o nome.
+
 **Ideia futura.** Um classificador de relevância treinado com os rótulos do YouTube, que capte as menções implícitas.
