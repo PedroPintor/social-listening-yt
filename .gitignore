@@ -10,6 +10,8 @@ src-pln/models/
 
 # Coleta do YouTube: dados brutos, cache e amostras (os termos da API desaconselham redistribuir)
 src-pln/coleta_youtube/dados/
+# App: análises salvas (contêm textos de comentários)
+src/analises/
 
 # Python e Jupyter
 __pycache__/

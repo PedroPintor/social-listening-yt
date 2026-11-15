@@ -28,7 +28,10 @@ safetensors==0.8.0
 requests==2.32.5
 python-dotenv==1.2.2
 
-# --- Etapas futuras (descomente quando for usar) ---
-# transformers           # fine-tuning do BERTimbau (já vem com gliner2[local])
-# datasets
-# streamlit              # aplicação / chatbot
+# Etapa 5 e app: BERTimbau (transformers já vem com gliner2[local]; fixado aqui por ser usado direto)
+transformers==5.22.2
+scipy==1.18.1
+joblib==1.6.0
+
+# App (src/app.py): python -m streamlit run src/app.py
+streamlit==1.67.0
