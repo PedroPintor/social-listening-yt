@@ -1,0 +1,351 @@
+id,tipo,produto,video_id,comment_id,rotulo_pedro,rotulo_maria_alice,rotulo_final
+c001,comentário,O Boticário (perfumes),zTkuUS7rW8Q,Ugxq_fxHGEJqOasLsU14AaABAg,negativo,negativo,negativo
+c002,comentário,PlayStation 5,7NhZYY8skL8,Ugw0TT4yVV6lBnzzAlZ4AaABAg,nao_sobre_produto,negativo,
+c003,comentário,O Boticário (perfumes),xW5q0b6aPcQ,UgxLyN7mPyy9D4OtwDx4AaABAg,positivo,positivo,positivo
+c004,comentário,BYD Dolphin Mini,Mx0frp7QThE,Ugz4i940UV88JH-Ojqt4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c005,comentário,PlayStation 5,NCeoLtPjHOs,Ugwjz74DyuL373gAdWN4AaABAg,nao_sobre_produto,neutro,
+c006,comentário,BYD Dolphin Mini,Y4MRYSX-3hA,Ugybgrif09r614mbf-14AaABAg,neutro,neutro,neutro
+c007,comentário,O Boticário (perfumes),kUFBYvK_tks,Ugyp6lE8DmIcuj--uPd4AaABAg,nao_sobre_produto,neutro,
+c008,comentário,Havaianas,RpT2SQAY_Q4,UgyDl2mcoWd7UJxPBUp4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c009,comentário,iFood,6RoWYhBUfh0,UgwT_V4dJXd5ptdQTjR4AaABAg,negativo,positivo,
+c010,comentário,O Boticário (perfumes),6dgU-GwaOtI,UgyyGjtqs3DYvTtzcIl4AaABAg,neutro,neutro,neutro
+c011,comentário,iFood,Kze2-aTG4CA,UgylwW3sJtl9awfFEFp4AaABAg,nao_sobre_produto,positivo,
+c012,comentário,O Boticário (perfumes),9jQyP4SpQwo,UgyTyjeheBeFMael2Qh4AaABAg,positivo,misto,
+c013,comentário,iPhone 17,avlrGVRvM1A,UgwFoX-djN-g2votvqV4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c014,comentário,BYD Dolphin Mini,vpxsH1_BLQk,UgwsciDD1AFKsuLTuUF4AaABAg,neutro,positivo,
+c015,comentário,Havaianas,IJ5j0YOx9W4,UgzvcpSwI4DOzARhxXx4AaABAg,nao_sobre_produto,positivo,
+c016,comentário,Havaianas,1VBUgyghKKI,UgxwdpuX_wJAaW1b6414AaABAg,nao_sobre_produto,negativo,
+c017,comentário,iFood,7npzLJOThF4,UgwRoIxTvuvOpHd00Px4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c018,comentário,PlayStation 5,nRHzcZeSAnI,Ugxuv-wDrdQGK5U_HOV4AaABAg,negativo,negativo,negativo
+c019,comentário,iPhone 17,lYlNqtXfREI,UgwT2tpilshlVOacncF4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c020,comentário,O Boticário (perfumes),9jQyP4SpQwo,UgyMoXDjHVf96A_dHmN4AaABAg,neutro,neutro,neutro
+c021,comentário,BYD Dolphin Mini,eKtdA53tOgs,UgzJOllZlxUIxm50ia54AaABAg,neutro,negativo,
+c022,comentário,Havaianas,IJ5j0YOx9W4,UgxFzuUGlwWqeCSXUDN4AaABAg,nao_sobre_produto,positivo,
+c023,comentário,iPhone 17,avlrGVRvM1A,UgyZ04poyDOgmuSUwyt4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c024,comentário,PlayStation 5,nRHzcZeSAnI,UgwDbe9o9e7AqWwGUBZ4AaABAg,neutro,positivo,
+c025,comentário,iPhone 17,OEieh71WPRA,UgxFB3MTfc8RKQqvdSZ4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c026,comentário,Havaianas,RpT2SQAY_Q4,UgyIQX28iI-9xRX4xMJ4AaABAg,positivo,positivo,positivo
+c027,comentário,O Boticário (perfumes),fmodkRAG1CI,UgwdKWmRcYnl2z9PLQx4AaABAg,nao_sobre_produto,negativo,
+c028,comentário,BYD Dolphin Mini,DjHKM8MwV0I,UgwgIpTFMaIhdniBuyp4AaABAg,negativo,negativo,negativo
+c029,comentário,O Boticário (perfumes),dCRHxAPh-rk,UgwFeJByCGRlf9S5D8J4AaABAg,neutro,neutro,neutro
+c030,comentário,iPhone 17,rryNc3FdmmM,UgxAeycewGm-MUzrC7x4AaABAg,nao_sobre_produto,negativo,
+c031,comentário,iFood,Kze2-aTG4CA,UgzCOsgU3y18oET23a54AaABAg,nao_sobre_produto,positivo,
+c032,comentário,BYD Dolphin Mini,WruKJ48UaTE,UgzmsIS-EGzqpR49WMd4AaABAg,neutro,positivo,
+c033,comentário,Havaianas,cqss007bzNM,UgxrWczWycjjQsc5xB94AaABAg,neutro,positivo,
+c034,comentário,iPhone 17,in6jfKtUdO8,UgxhWVBYo-rw7wTLMdV4AaABAg,neutro,neutro,neutro
+c035,comentário,iPhone 17,-sb_sXfItx4,UgxZZHRS3S2S4PXUnVJ4AaABAg,negativo,negativo,negativo
+c036,comentário,PlayStation 5,nRHzcZeSAnI,UgwTJQN8M2XqOdWX5gx4AaABAg,nao_sobre_produto,negativo,
+c037,comentário,iFood,2vbIX0xVjbU,Ugyj_Iec3_hHSpfmCOJ4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c038,comentário,Havaianas,CV6P1Ma-oCM,UgwjtY10gU8LJgnRfCJ4AaABAg,neutro,nao_sobre_produto,
+c039,comentário,iPhone 17,YFrHt12ILis,UgyeioC2AzfugHvWAzV4AaABAg,nao_sobre_produto,positivo,
+c040,comentário,PlayStation 5,7NhZYY8skL8,UgwWnB8X2THSMQWpNMx4AaABAg,neutro,negativo,
+c041,comentário,O Boticário (perfumes),ZnXVYu8mSzc,Ugy_Y6ZW8RMlUrCj0Dt4AaABAg,negativo,negativo,negativo
+c042,comentário,Havaianas,0o6jSy7Ul9I,UgxFwwcWTeZo9EWgZFx4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c043,comentário,BYD Dolphin Mini,vpxsH1_BLQk,Ugx_AGMQYRuY9GDnSc54AaABAg,neutro,negativo,
+c044,comentário,Havaianas,-QA_hLUpdbo,UgyYAcCvX2m4L-vXTaR4AaABAg,nao_sobre_produto,neutro,
+c045,comentário,iPhone 17,M-EWSgaKTAs,Ugwz81KCqH53AKjDJ954AaABAg,neutro,positivo,
+c046,comentário,iFood,v0Ujuwu18r4,UgwAaRMGwC9YF68c8EN4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c047,comentário,iFood,mPpMHjA0t18,Ugxw-ofFy85n3Uxl6k94AaABAg,negativo,nao_sobre_produto,
+c048,comentário,PlayStation 5,jEzcsV1-t2o,UgxAltq39uPpEiL93m14AaABAg,neutro,neutro,neutro
+c049,comentário,BYD Dolphin Mini,DjHKM8MwV0I,UgyYQvLAVTghG6yBmnB4AaABAg,positivo,positivo,positivo
+c050,comentário,iPhone 17,avlrGVRvM1A,Ugz8geeyr8MZGHl1LWp4AaABAg,neutro,positivo,
+c051,comentário,PlayStation 5,nRHzcZeSAnI,UgzwiSsP5A8kPQggEgF4AaABAg,neutro,neutro,neutro
+c052,comentário,Havaianas,0o6jSy7Ul9I,Ugy7_h9vGk6ntAEW-MJ4AaABAg,positivo,positivo,positivo
+c053,comentário,iFood,W2A0TNOVaSw,UgyULdvrMaBSBWa15eR4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c054,comentário,O Boticário (perfumes),kUFBYvK_tks,UgwGR2aBZMEAe5SfPp94AaABAg,misto,negativo,
+c055,comentário,iPhone 17,f9fGu6sbgf4,UgxpLjAoe0R2WiAIJzF4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c056,comentário,Havaianas,oVtXlnW7JoM,UgznMup-PSmzzZDV8wZ4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c057,comentário,Havaianas,d_VdEMTHzs8,UgxGp8nodAYaIkwDOHN4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c058,comentário,Havaianas,cqss007bzNM,Ugwfv6-64xXIArnH8bZ4AaABAg,negativo,negativo,negativo
+c059,comentário,O Boticário (perfumes),fmodkRAG1CI,Ugyrz-hvPs9CYZiLNAd4AaABAg,nao_sobre_produto,negativo,
+c060,comentário,O Boticário (perfumes),Ds5nl5Bz91w,UgyCfos72TKHaqr0bzl4AaABAg,positivo,positivo,positivo
+c061,comentário,O Boticário (perfumes),Ds5nl5Bz91w,UgzZEPKpCHMZoUC6zVh4AaABAg,positivo,positivo,positivo
+c062,comentário,PlayStation 5,nRHzcZeSAnI,UgwPaix3LmW6PDEG1IJ4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c063,comentário,Havaianas,cqss007bzNM,UgxMY7nR7r_nJS_JTQt4AaABAg,misto,misto,misto
+c064,comentário,Havaianas,IJ5j0YOx9W4,UgzajwPFVSBo7_k9nRR4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c065,comentário,iPhone 17,lYlNqtXfREI,Ugy5BSd_igTGrgOkhZN4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c066,comentário,Havaianas,d_VdEMTHzs8,UgxFYjNyfWt6NJ3Yted4AaABAg,positivo,positivo,positivo
+c067,comentário,BYD Dolphin Mini,Y4MRYSX-3hA,UgxRApakqyI1JJmTvtF4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c068,comentário,iPhone 17,avlrGVRvM1A,UgxvU3mrJgtXpwV2kX14AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c069,comentário,iFood,6RoWYhBUfh0,UgwG6Fbbf_u1SV1ZvYx4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c070,comentário,PlayStation 5,NCeoLtPjHOs,Ugy_ct-K0L4mlHZzjW94AaABAg,nao_sobre_produto,positivo,
+c071,comentário,iFood,mPpMHjA0t18,UgxwuKZ-BARN41p9W994AaABAg,nao_sobre_produto,negativo,
+c072,comentário,O Boticário (perfumes),kUFBYvK_tks,UgzFZdqNs21yU8JNRk14AaABAg,nao_sobre_produto,positivo,
+c073,comentário,iFood,KVg3IInQdU8,UgwsFRbgGz_VNObCLNd4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c074,comentário,BYD Dolphin Mini,eKtdA53tOgs,Ugyo9tmvmQoe4o4N5RR4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c075,comentário,Havaianas,svkfU4Qd-R0,UgxX7a0763YwgVv3Cqt4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c076,comentário,PlayStation 5,nRHzcZeSAnI,UgypgQ58hSp1dhSjvvh4AaABAg,negativo,negativo,negativo
+c077,comentário,BYD Dolphin Mini,vpxsH1_BLQk,UgzH4MZnZBcbJxzBjtF4AaABAg,negativo,positivo,
+c078,comentário,PlayStation 5,jEzcsV1-t2o,Ugx4n7-3rbiOqdd99Hh4AaABAg,nao_sobre_produto,neutro,
+c079,comentário,iPhone 17,YFrHt12ILis,Ugzkg4Ike-JRHBW_Is94AaABAg,nao_sobre_produto,neutro,
+c080,comentário,iFood,Kze2-aTG4CA,UgzhDIm3Xm2uJuMuCHh4AaABAg,nao_sobre_produto,positivo,
+c081,comentário,iPhone 17,lYlNqtXfREI,UgzbAiAwm1ScudxQ6i54AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c082,comentário,PlayStation 5,NCeoLtPjHOs,UgynAGHsZqGXZ3f2W-x4AaABAg,nao_sobre_produto,neutro,
+c083,comentário,PlayStation 5,7NhZYY8skL8,Ugz-EAkpuR7TFgae5r54AaABAg,nao_sobre_produto,positivo,
+c084,comentário,O Boticário (perfumes),kUFBYvK_tks,UgxfbhyQ7dp96grg2954AaABAg,nao_sobre_produto,positivo,
+c085,comentário,iFood,7npzLJOThF4,UgyVLGhl2ZY16lh6OBt4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c086,comentário,BYD Dolphin Mini,pzoHQj9FTy8,UgxRlyRX_XCCmBq2hdR4AaABAg,neutro,positivo,
+c087,comentário,iPhone 17,f9fGu6sbgf4,Ugy4gFOgypisVgpV8ld4AaABAg,nao_sobre_produto,positivo,
+c088,comentário,iFood,7npzLJOThF4,UgybD4-sTFLXH6aMDr14AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c089,comentário,Havaianas,0o6jSy7Ul9I,UgxTn0iMWMgzCJ4J3tp4AaABAg,positivo,positivo,positivo
+c090,comentário,iFood,mPpMHjA0t18,Ugyo4ALMmQN1r7L49jt4AaABAg,nao_sobre_produto,negativo,
+c091,comentário,iPhone 17,avlrGVRvM1A,UgxhZYEbWH5J-2CRoMN4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c092,comentário,PlayStation 5,nRHzcZeSAnI,Ugyb5Fbv_8qAzR00YEp4AaABAg,nao_sobre_produto,negativo,
+c093,comentário,iFood,7npzLJOThF4,UgxwBIH9lVsLTvV1l194AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c094,comentário,BYD Dolphin Mini,Ea47n4gYabY,UgxxvHW2tzbsH9jMpeJ4AaABAg,negativo,negativo,negativo
+c095,comentário,iPhone 17,lYlNqtXfREI,Ugxjp6NGphVKe0BtYDp4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c096,comentário,BYD Dolphin Mini,Mx0frp7QThE,UgyojkEhRT7at_GQPDB4AaABAg,positivo,positivo,positivo
+c097,comentário,iFood,2vbIX0xVjbU,Ugx8CBJ761bbIE6WE214AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c098,comentário,O Boticário (perfumes),mKXL3pmeQ48,UgyoeLFDUlUUoyQM3FJ4AaABAg,neutro,positivo,
+c099,comentário,BYD Dolphin Mini,pmdsTtd976Q,UgzQdVP9-SxJkXpPH5V4AaABAg,neutro,misto,
+c100,comentário,O Boticário (perfumes),_rftchmIKLY,UgylIGEnyQZ__GSTCqZ4AaABAg,negativo,negativo,negativo
+c101,comentário,Havaianas,CV6P1Ma-oCM,UgxvKuwxZ3Z4KP61YiJ4AaABAg,neutro,neutro,neutro
+c102,comentário,iFood,Kze2-aTG4CA,UgyQM9m45UDZHvOQith4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c103,comentário,BYD Dolphin Mini,Mx0frp7QThE,UgzunVAovQKxD4NES7l4AaABAg,nao_sobre_produto,neutro,
+c104,comentário,iFood,7npzLJOThF4,UgxFBCAGnHg5TzvgNIB4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c105,comentário,iFood,6RoWYhBUfh0,UgwIul7oL8zl-JQmWzN4AaABAg,neutro,nao_sobre_produto,
+c106,comentário,iPhone 17,M-EWSgaKTAs,Ugz4yPc6zPS3UXxiQB54AaABAg,nao_sobre_produto,neutro,
+c107,comentário,PlayStation 5,jEzcsV1-t2o,UgwuoXX5ah18JQeaUJl4AaABAg,nao_sobre_produto,positivo,
+c108,comentário,iPhone 17,e1JJ-0hIctE,UgwThkzPvK-120xXRmp4AaABAg,positivo,nao_sobre_produto,
+c109,comentário,BYD Dolphin Mini,WruKJ48UaTE,UgxkplAS1MA_x4mcI2p4AaABAg,negativo,negativo,negativo
+c110,comentário,PlayStation 5,Kb5vWIbpT_8,Ugx8zfHfi3HQ_bdbcgh4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c111,comentário,iPhone 17,q3gigR9Ysfo,UgxFv9-Qjk1PNhi6mCB4AaABAg,negativo,negativo,negativo
+c112,comentário,O Boticário (perfumes),Ds5nl5Bz91w,Ugxafy1QQOvkyVYwz-h4AaABAg,negativo,negativo,negativo
+c113,comentário,BYD Dolphin Mini,GLtu5oCY5gU,UgzE_9F-VEhKeOTW9dJ4AaABAg,negativo,negativo,negativo
+c114,comentário,Havaianas,RpT2SQAY_Q4,UgyNtCx9HYmnsz7KNiN4AaABAg,negativo,neutro,
+c115,comentário,PlayStation 5,7NhZYY8skL8,Ugzzux0d0XGVLxhHcGx4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c116,comentário,O Boticário (perfumes),_rftchmIKLY,Ugzxh6q0JxTpQAJPMHh4AaABAg,misto,positivo,
+c117,comentário,O Boticário (perfumes),fmodkRAG1CI,Ugz-AaZGIbEi-UPpSx54AaABAg,negativo,negativo,negativo
+c118,comentário,O Boticário (perfumes),ZnXVYu8mSzc,UgxE0mHPPkiSrt7qhh54AaABAg,positivo,positivo,positivo
+c119,comentário,PlayStation 5,NCeoLtPjHOs,UgxEdU7dNnbygDMzm0Z4AaABAg,neutro,negativo,
+c120,comentário,Havaianas,CV6P1Ma-oCM,UgzK8LwlZr_6CuQk1up4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c121,comentário,Havaianas,1YaFS7v-6W0,Ugy8hZa3tbe5vJVdnZl4AaABAg,nao_sobre_produto,neutro,
+c122,comentário,Havaianas,RpT2SQAY_Q4,UgzeddOroQMA25ioZVt4AaABAg,nao_sobre_produto,positivo,
+c123,comentário,iFood,v0Ujuwu18r4,Ugx7hx1HrXtHzt9-Wgh4AaABAg,nao_sobre_produto,neutro,
+c124,comentário,BYD Dolphin Mini,GLtu5oCY5gU,Ugx9UBGa4X6om9OEYjl4AaABAg,neutro,neutro,neutro
+c125,comentário,Havaianas,cqss007bzNM,UgwhQkc2Vdh6Gf0SLzp4AaABAg,nao_sobre_produto,positivo,
+c126,comentário,Havaianas,8Ns7Ywuz6nE,UgyZuAoXNoJuT9hgQuN4AaABAg,positivo,neutro,
+c127,comentário,iPhone 17,-sb_sXfItx4,Ugyo4BLfqCrp5FQLwAN4AaABAg,neutro,positivo,
+c128,comentário,iPhone 17,-sb_sXfItx4,UgzHdBQN_laaNsLfR3x4AaABAg,neutro,nao_sobre_produto,
+c129,comentário,iFood,mPpMHjA0t18,UgzWW6dUbvij7JeqMZZ4AaABAg,negativo,nao_sobre_produto,
+c130,comentário,iFood,v0Ujuwu18r4,UgzfFU4nLiXhJT5eLrZ4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c131,comentário,Havaianas,dlzyR9buGv8,Ugz82LeepssDNIccGLR4AaABAg,positivo,positivo,positivo
+c132,comentário,BYD Dolphin Mini,vpxsH1_BLQk,UgzQ4jVNnfuVj99Zk0l4AaABAg,nao_sobre_produto,neutro,
+c133,comentário,BYD Dolphin Mini,Ea47n4gYabY,UgxIfLL4n7NPuydMVD14AaABAg,negativo,negativo,negativo
+c134,comentário,iFood,7npzLJOThF4,UgzhURJUqLtdEZN6ooV4AaABAg,negativo,negativo,negativo
+c135,comentário,iFood,7npzLJOThF4,Ugz3QkcmnGpT6D2u4SV4AaABAg,negativo,negativo,negativo
+c136,comentário,O Boticário (perfumes),Ds5nl5Bz91w,UgyykjOGiy6pg64ZsGh4AaABAg,negativo,negativo,negativo
+c137,comentário,Havaianas,IJ5j0YOx9W4,Ugy8batG-vj8-xCL8IF4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c138,comentário,BYD Dolphin Mini,GLtu5oCY5gU,Ugx5l7vrw8aG2kUKtJt4AaABAg,negativo,negativo,negativo
+c139,comentário,PlayStation 5,7NhZYY8skL8,UgztyQSllWfTezjqxaZ4AaABAg,neutro,positivo,
+c140,comentário,BYD Dolphin Mini,Y4MRYSX-3hA,UgxRr0cWmViP9GbijpV4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c141,comentário,O Boticário (perfumes),kUFBYvK_tks,UgwVADZOcTi9Xs4Y7Ex4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c142,comentário,BYD Dolphin Mini,DjHKM8MwV0I,Ugx4ZrL5i_dCQMF2_gR4AaABAg,positivo,nao_sobre_produto,
+c143,comentário,O Boticário (perfumes),xW5q0b6aPcQ,Ugxz7gWTovqt2moICNh4AaABAg,nao_sobre_produto,negativo,
+c144,comentário,PlayStation 5,jEzcsV1-t2o,Ugz3wO95fDt7XE1LEbF4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c145,comentário,PlayStation 5,7NhZYY8skL8,UgzZA2O0poyJ6Dx3FJd4AaABAg,negativo,negativo,negativo
+c146,comentário,PlayStation 5,NCeoLtPjHOs,Ugw1VBZ3Nye3rZlQ5sN4AaABAg,neutro,nao_sobre_produto,
+c147,comentário,iFood,v0Ujuwu18r4,Ugz4DECTD17QQcnZOpt4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c148,comentário,iPhone 17,lYlNqtXfREI,UgyhmbzWLDNa3UQpirR4AaABAg,negativo,nao_sobre_produto,
+c149,comentário,iPhone 17,in6jfKtUdO8,UgygLnIydQLy2WaPKbV4AaABAg,neutro,neutro,neutro
+c150,comentário,PlayStation 5,jEzcsV1-t2o,UgxxzEoym08BlTTraRZ4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c151,comentário,O Boticário (perfumes),_rftchmIKLY,UgxHcaxp-KrFPOg9c8l4AaABAg,positivo,positivo,positivo
+c152,comentário,iFood,Kze2-aTG4CA,UgxuVjfKlyaxm2Ld_DV4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c153,comentário,PlayStation 5,7NhZYY8skL8,UgyaCgt1O3rgxFzxLJd4AaABAg,nao_sobre_produto,positivo,
+c154,comentário,BYD Dolphin Mini,pmdsTtd976Q,UgxMHfromfcQFJ9b6a54AaABAg,misto,negativo,
+c155,comentário,iFood,6RoWYhBUfh0,UgwL4Iy0LhUjbbhdYsZ4AaABAg,nao_sobre_produto,neutro,
+c156,comentário,O Boticário (perfumes),ZnXVYu8mSzc,Ugym5y2RvZs9BZD1gWJ4AaABAg,neutro,neutro,neutro
+c157,comentário,BYD Dolphin Mini,eKtdA53tOgs,UgzcCheK0MIyTDhrYG54AaABAg,negativo,neutro,
+c158,comentário,O Boticário (perfumes),dCRHxAPh-rk,Ugz73L-xoEGjO4zTXGx4AaABAg,negativo,neutro,
+c159,comentário,PlayStation 5,NCeoLtPjHOs,UgxmK4DU_VCYHWYWaYx4AaABAg,neutro,positivo,
+c160,comentário,iPhone 17,-sb_sXfItx4,UgzK_uVpwOx_Ht7UQYt4AaABAg,neutro,positivo,
+c161,comentário,iFood,v0Ujuwu18r4,UgyJBr5upN8uMKljknd4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c162,comentário,PlayStation 5,NCeoLtPjHOs,UgzFPJ0cVz1gmMPjSx14AaABAg,neutro,neutro,neutro
+c163,comentário,O Boticário (perfumes),mKXL3pmeQ48,UgwwDBdP2XIFsdAGClp4AaABAg,nao_sobre_produto,positivo,
+c164,comentário,BYD Dolphin Mini,Ea47n4gYabY,UgxknevVXjW2MYV5_XV4AaABAg,misto,positivo,
+c165,comentário,iFood,2vbIX0xVjbU,UgyVhX8uO-222DB47JB4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c166,comentário,BYD Dolphin Mini,GLtu5oCY5gU,Ugy17QWU8Ae-wIN1Q_54AaABAg,neutro,neutro,neutro
+c167,comentário,O Boticário (perfumes),6dgU-GwaOtI,Ugw6D1EPCfek65EyPZ94AaABAg,neutro,negativo,
+c168,comentário,iFood,2vbIX0xVjbU,Ugx717zZubboZO04i-94AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c169,comentário,Havaianas,CV6P1Ma-oCM,UgxMKqhs3O1e6x1Wc5t4AaABAg,neutro,neutro,neutro
+c170,comentário,BYD Dolphin Mini,Mx0frp7QThE,Ugz7Er8tO8upoB2MCDJ4AaABAg,neutro,neutro,neutro
+c171,comentário,iPhone 17,rryNc3FdmmM,UgyKrrlgCFu6i0WraiB4AaABAg,nao_sobre_produto,negativo,
+c172,comentário,Havaianas,cqss007bzNM,UgyL28224edw4wS1YJN4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c173,comentário,BYD Dolphin Mini,eKtdA53tOgs,UgwKqDtTgjW9hOwN2Yx4AaABAg,negativo,negativo,negativo
+c174,comentário,iFood,W2A0TNOVaSw,UgxdmJ3ZIPvcj0sHu9l4AaABAg,positivo,nao_sobre_produto,
+c175,comentário,PlayStation 5,7NhZYY8skL8,UgwDALffg8cR3lpwyp94AaABAg,neutro,misto,
+c176,comentário,PlayStation 5,Kb5vWIbpT_8,Ugz-B7TWF4urWt0DnLh4AaABAg,nao_sobre_produto,neutro,
+c177,comentário,iFood,Kze2-aTG4CA,UgzOs5jnXF9qa7-I8jl4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c178,comentário,O Boticário (perfumes),ZnXVYu8mSzc,UgyFbGDle-OHXaaF6yh4AaABAg,positivo,positivo,positivo
+c179,comentário,BYD Dolphin Mini,DjHKM8MwV0I,UgxpimEJlUMzrwkolIt4AaABAg,positivo,positivo,positivo
+c180,comentário,iPhone 17,-sb_sXfItx4,UgwdX1Zt5Tmiq4lw31B4AaABAg,neutro,positivo,
+c181,comentário,Havaianas,xv6N_60X-FA,UgwwsGv6AphZW0655u94AaABAg,negativo,negativo,negativo
+c182,comentário,BYD Dolphin Mini,Ea47n4gYabY,Ugw18WQtYWTPTKY7GIh4AaABAg,negativo,negativo,negativo
+c183,comentário,Havaianas,RpT2SQAY_Q4,UgxzjrhVQdVJm8Nv7B54AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c184,comentário,O Boticário (perfumes),6dgU-GwaOtI,UgzbORHJ0fEtU1JLLCN4AaABAg,neutro,nao_sobre_produto,
+c185,comentário,Havaianas,IJ5j0YOx9W4,UgzV0yutn_WQK87HThh4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c186,comentário,O Boticário (perfumes),mKXL3pmeQ48,UgyZcwYahY_lWjPXgyR4AaABAg,positivo,positivo,positivo
+c187,comentário,iPhone 17,yOaOwB9eTno,UgxcoAlKnulR-FtndKJ4AaABAg,nao_sobre_produto,positivo,
+c188,comentário,iPhone 17,in6jfKtUdO8,UgxxK_eRxCHTvbVoo_x4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c189,comentário,iPhone 17,in6jfKtUdO8,Ugw0iU-iYP2JFay55lB4AaABAg,positivo,positivo,positivo
+c190,comentário,O Boticário (perfumes),Ds5nl5Bz91w,Ugzc6dJgl0vdc-uySxB4AaABAg,positivo,positivo,positivo
+c191,comentário,iFood,W2A0TNOVaSw,UgySJNpcn_nFkevN0eV4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c192,comentário,O Boticário (perfumes),9jQyP4SpQwo,UgxGPMLnVU_CT285T2N4AaABAg,misto,negativo,
+c193,comentário,PlayStation 5,Kb5vWIbpT_8,UgzNaG7KxgXEXi28nCV4AaABAg,nao_sobre_produto,negativo,
+c194,comentário,iFood,6RoWYhBUfh0,UgwmpDM0NIPMgs3a4ah4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c195,comentário,PlayStation 5,Kb5vWIbpT_8,UgypHy0pSaWKRfQK9jx4AaABAg,neutro,neutro,neutro
+c196,comentário,Havaianas,IJ5j0YOx9W4,UgxtPVlZjBR6NauYhIN4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c197,comentário,Havaianas,CV6P1Ma-oCM,UgxxRVuXtzIdJ65_OCd4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c198,comentário,BYD Dolphin Mini,pzoHQj9FTy8,UgxQi-N9oDeH4hXqRql4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c199,comentário,O Boticário (perfumes),6dgU-GwaOtI,UgzJ4xmstYtJ-A6qWSx4AaABAg,nao_sobre_produto,negativo,
+c200,comentário,PlayStation 5,7NhZYY8skL8,UgxWW5VzpSDggBs6wGZ4AaABAg,negativo,negativo,negativo
+c201,comentário,iFood,mPpMHjA0t18,UgzHxer75gdbspo3s-B4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c202,comentário,iPhone 17,q3gigR9Ysfo,UgyiaS4QyiIo7cVr4HR4AaABAg,positivo,positivo,positivo
+c203,comentário,Havaianas,RpT2SQAY_Q4,Ugy4q-XaJfa9T9w07jF4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c204,comentário,PlayStation 5,Kb5vWIbpT_8,UgyJ5xmSs16pxrZsaDt4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c205,comentário,iFood,v0Ujuwu18r4,UgzZo0MlStwLNtTD65R4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c206,comentário,iPhone 17,f9fGu6sbgf4,Ugzc6sAILs5eYSQfLzJ4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c207,comentário,iFood,2vbIX0xVjbU,UgziAmJdO7FsCsNscrl4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c208,comentário,BYD Dolphin Mini,WruKJ48UaTE,UgyoixahWgVFnzUykBV4AaABAg,negativo,negativo,negativo
+c209,comentário,iPhone 17,lYlNqtXfREI,UgwAOlIAflQDZgpc2Ft4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c210,comentário,iPhone 17,rfpM1ta8jwM,Ugza4Mk2ton6iJqsN3h4AaABAg,nao_sobre_produto,positivo,
+c211,comentário,BYD Dolphin Mini,WruKJ48UaTE,UgzydPXcngZVp1f1YW14AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c212,comentário,iFood,DPscO_od360,Ugw_PGITidgOxD2-Itp4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c213,comentário,PlayStation 5,Kb5vWIbpT_8,UgwvAGrLWqkWP68dIEZ4AaABAg,neutro,neutro,neutro
+c214,comentário,O Boticário (perfumes),6dgU-GwaOtI,UgyKYOemdqlzKyaJ03J4AaABAg,nao_sobre_produto,positivo,
+c215,comentário,PlayStation 5,nRHzcZeSAnI,Ugz2qxotwkCDYSAHdHV4AaABAg,positivo,positivo,positivo
+c216,comentário,PlayStation 5,nRHzcZeSAnI,Ugz2JQfpUxOKhmMKgZh4AaABAg,nao_sobre_produto,neutro,
+c217,comentário,iFood,6RoWYhBUfh0,UgwOmaOZ9rqLkGYV_Xh4AaABAg,nao_sobre_produto,neutro,
+c218,comentário,O Boticário (perfumes),mKXL3pmeQ48,Ugz0nwk42zdk40cOAGx4AaABAg,positivo,positivo,positivo
+c219,comentário,Havaianas,CV6P1Ma-oCM,UgxhpjEUZkOzy6yuIkd4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c220,comentário,iPhone 17,rryNc3FdmmM,UgyL1L2sGfN_Fsk6brd4AaABAg,nao_sobre_produto,negativo,
+c221,comentário,PlayStation 5,jEzcsV1-t2o,UgzGqjDVk2uQLVmqjlx4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c222,comentário,Havaianas,BVn7LX7HddE,UgxH9S9fB4OUeVnTW4N4AaABAg,negativo,negativo,negativo
+c223,comentário,iPhone 17,f9fGu6sbgf4,Ugwptu9gRWS7KHsYZBN4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c224,comentário,iPhone 17,avlrGVRvM1A,UgwaxlT8WfZshUkzWJt4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c225,comentário,PlayStation 5,jEzcsV1-t2o,Ugxv8F1ptArNQSChSop4AaABAg,nao_sobre_produto,neutro,
+c226,comentário,iPhone 17,q3gigR9Ysfo,UgyJzfBN6nlA1cP4ERF4AaABAg,positivo,positivo,positivo
+c227,comentário,BYD Dolphin Mini,pmdsTtd976Q,UgymqCbjL3PiuiDB6HZ4AaABAg,negativo,nao_sobre_produto,
+c228,comentário,PlayStation 5,jEzcsV1-t2o,UgwIckcB1DvRyrlWZnV4AaABAg,neutro,positivo,
+c229,comentário,BYD Dolphin Mini,vpxsH1_BLQk,Ugxlt_JDpg4B1qCqxfB4AaABAg,negativo,negativo,negativo
+c230,comentário,O Boticário (perfumes),9jQyP4SpQwo,Ugyb6KEIh5JAmOpbItd4AaABAg,positivo,positivo,positivo
+c231,comentário,BYD Dolphin Mini,eKtdA53tOgs,UgwB0mOmAxiLxSmRR1x4AaABAg,nao_sobre_produto,positivo,
+c232,comentário,iFood,6RoWYhBUfh0,UgzdNZ-gAN5l_q9UT3t4AaABAg,nao_sobre_produto,negativo,
+c233,comentário,Havaianas,8GwLoT2kTrA,UgyXKihYYGl4az6NSgJ4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c234,comentário,iFood,W2A0TNOVaSw,UgxaiNHC1Vd4Ow_nc5d4AaABAg,positivo,nao_sobre_produto,
+c235,comentário,iFood,W2A0TNOVaSw,UgwRrrniZ4x16KSB0Ex4AaABAg,positivo,nao_sobre_produto,
+c236,comentário,iPhone 17,f9fGu6sbgf4,Ugx4WYgxui3Jangdbpl4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c237,comentário,Havaianas,RpT2SQAY_Q4,UgwBE5R8DrdKw40dyFJ4AaABAg,neutro,positivo,
+c238,comentário,iPhone 17,-sb_sXfItx4,UgwcXBN83bsnZsYI1Qx4AaABAg,neutro,positivo,
+c239,comentário,O Boticário (perfumes),6dgU-GwaOtI,UgyAT_ZHI9qTWxwERwd4AaABAg,neutro,nao_sobre_produto,
+c240,comentário,iPhone 17,f9fGu6sbgf4,Ugz5ogmudScjErzGcR14AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c241,comentário,BYD Dolphin Mini,pmdsTtd976Q,UgwFatffsl_qEjJ6TCZ4AaABAg,nao_sobre_produto,positivo,
+c242,comentário,PlayStation 5,Kb5vWIbpT_8,UgxTGms4kxbh-4faZzZ4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c243,comentário,PlayStation 5,Kb5vWIbpT_8,Ugz2P-YmkGHzzm7_TwF4AaABAg,nao_sobre_produto,negativo,
+c244,comentário,PlayStation 5,NCeoLtPjHOs,UgwEdQrAmNecnKI_yXx4AaABAg,neutro,negativo,
+c245,comentário,PlayStation 5,NCeoLtPjHOs,UgzQEqZIp-OKESG0_7B4AaABAg,neutro,neutro,neutro
+c246,comentário,BYD Dolphin Mini,Ea47n4gYabY,UgzhzR3As6JxIhlpMY94AaABAg,positivo,nao_sobre_produto,
+c247,comentário,BYD Dolphin Mini,Y4MRYSX-3hA,Ugwhos6R9q8yP-OWx9J4AaABAg,neutro,nao_sobre_produto,
+c248,comentário,PlayStation 5,Kb5vWIbpT_8,Ugyg0cmYfZXpk-Yurz94AaABAg,neutro,negativo,
+c249,comentário,O Boticário (perfumes),fmodkRAG1CI,Ugxv8ThLDvb8-ldFV714AaABAg,positivo,positivo,positivo
+c250,comentário,iPhone 17,rryNc3FdmmM,UgzLvZchvBrL7AhCx0l4AaABAg,nao_sobre_produto,negativo,
+c251,comentário,PlayStation 5,NCeoLtPjHOs,UgyW9muIUdLReof4r-t4AaABAg,neutro,neutro,neutro
+c252,comentário,O Boticário (perfumes),_rftchmIKLY,UgwffKiuSwzy5P5-3M54AaABAg,positivo,positivo,positivo
+c253,comentário,BYD Dolphin Mini,Y4MRYSX-3hA,UgzrER2mPraQ0-1Qu7B4AaABAg,negativo,negativo,negativo
+c254,comentário,iFood,Kze2-aTG4CA,UgyBnZADy2jndtHgGNN4AaABAg,nao_sobre_produto,neutro,
+c255,comentário,Havaianas,Fh89bJAxVyg,Ugwtg03vpAme7KeU4nR4AaABAg,positivo,positivo,positivo
+c256,comentário,iPhone 17,rryNc3FdmmM,UgwFnp4a4ZFerI4xGdt4AaABAg,nao_sobre_produto,neutro,
+c257,comentário,iPhone 17,in6jfKtUdO8,Ugz54ADI82siaK6LdJF4AaABAg,positivo,positivo,positivo
+c258,comentário,Havaianas,CV6P1Ma-oCM,UgyfUjH9KT_wII8ZYfl4AaABAg,nao_sobre_produto,misto,
+c259,comentário,PlayStation 5,jEzcsV1-t2o,UgzzkAod6tWc2YkfvbF4AaABAg,nao_sobre_produto,negativo,
+c260,comentário,iPhone 17,q3gigR9Ysfo,UgxxTTAUoBBwkCsP3Qx4AaABAg,negativo,negativo,negativo
+c261,comentário,BYD Dolphin Mini,WruKJ48UaTE,Ugy1MlesiOroJoygN3F4AaABAg,positivo,positivo,positivo
+c262,comentário,Havaianas,cqss007bzNM,Ugx4-YEv9Hi4vwXh-aV4AaABAg,nao_sobre_produto,positivo,
+c263,comentário,Havaianas,MJzpVVJt2sM,Ugzbj9wYG7ZgVnCDhKR4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c264,comentário,BYD Dolphin Mini,Mx0frp7QThE,UgwrYI3T7H9_3ozRljF4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c265,comentário,PlayStation 5,Kb5vWIbpT_8,UgxsAtRFUihAPtJUb3d4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c266,comentário,iPhone 17,rryNc3FdmmM,UgyrASCWPbAt0BZutu94AaABAg,negativo,negativo,negativo
+c267,comentário,Havaianas,CV6P1Ma-oCM,Ugzb7vO2_LG46ClEbl54AaABAg,neutro,neutro,neutro
+c268,comentário,BYD Dolphin Mini,WruKJ48UaTE,UgzNSXT_KDIR675OKjN4AaABAg,positivo,positivo,positivo
+c269,comentário,O Boticário (perfumes),dCRHxAPh-rk,UgxjxeDBiQFuhhv37_94AaABAg,negativo,negativo,negativo
+c270,comentário,iFood,2vbIX0xVjbU,UgzHLj3Q_g_4iN-8Hvx4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c271,comentário,PlayStation 5,nRHzcZeSAnI,UgxXrjJt_kXPTVZRnmh4AaABAg,neutro,neutro,neutro
+c272,comentário,Havaianas,gfuznL2ucwo,UgyhUpT-BVeRoKw7gAZ4AaABAg,misto,misto,misto
+c273,comentário,Havaianas,ep2fpgtFQCo,UgxbFsVf4jiLZZFfi6t4AaABAg,nao_sobre_produto,positivo,
+c274,comentário,O Boticário (perfumes),_rftchmIKLY,UgwUuXKReT9NhyFjhst4AaABAg,neutro,neutro,neutro
+c275,comentário,O Boticário (perfumes),fmodkRAG1CI,Ugy0uhZQczpXvoNtKh54AaABAg,neutro,positivo,
+c276,comentário,O Boticário (perfumes),Ds5nl5Bz91w,UgzFmOi4LKNrISauEvJ4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c277,comentário,O Boticário (perfumes),zTkuUS7rW8Q,Ugxdxhiq4EfMhkmJ8RZ4AaABAg,negativo,negativo,negativo
+c278,comentário,Havaianas,-QA_hLUpdbo,Ugz404l2-ErCOeQgYJ54AaABAg,nao_sobre_produto,neutro,
+c279,comentário,iPhone 17,q3gigR9Ysfo,UgyRrmwBXGozhYrU-uR4AaABAg,positivo,positivo,positivo
+c280,comentário,PlayStation 5,jEzcsV1-t2o,Ugx6yS27KZD5I9XNIbp4AaABAg,nao_sobre_produto,neutro,
+c281,comentário,BYD Dolphin Mini,eKtdA53tOgs,UgxpceYuf7wmRYPPrP14AaABAg,positivo,positivo,positivo
+c282,comentário,iPhone 17,in6jfKtUdO8,UgxrjypwrE2kBkFeRyp4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c283,comentário,O Boticário (perfumes),dL8Uj3WK0ME,UgxFt4TFXLY295snhxd4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c284,comentário,BYD Dolphin Mini,DjHKM8MwV0I,UgwCfFtPl-1FXfdea1V4AaABAg,neutro,nao_sobre_produto,
+c285,comentário,O Boticário (perfumes),kUFBYvK_tks,UgysuqDRS_5p-RH8KYN4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c286,comentário,BYD Dolphin Mini,pmdsTtd976Q,UgyMlele0FtZOHoaN9d4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c287,comentário,BYD Dolphin Mini,GLtu5oCY5gU,Ugz_9e6I-fr7pppVlFx4AaABAg,neutro,neutro,neutro
+c288,comentário,iFood,W2A0TNOVaSw,Ugww1hbWSvgtlz3hmHx4AaABAg,positivo,nao_sobre_produto,
+c289,comentário,iFood,mPpMHjA0t18,UgxrJRnXCW-5PjF2Krd4AaABAg,nao_sobre_produto,neutro,
+c290,comentário,O Boticário (perfumes),_rftchmIKLY,UgyN2f4XN9IzBFJCNhF4AaABAg,positivo,positivo,positivo
+c291,comentário,Havaianas,RpT2SQAY_Q4,UgwsvSzIXZtgwu_rEDN4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c292,comentário,Havaianas,cqss007bzNM,UgyFB9dKZAXjpSuxW2h4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c293,comentário,PlayStation 5,7NhZYY8skL8,Ugw_d8AQuka_SFkY_9R4AaABAg,neutro,negativo,
+c294,comentário,iFood,W2A0TNOVaSw,UgybyLWdOfolVstYqAB4AaABAg,positivo,nao_sobre_produto,
+c295,comentário,iPhone 17,q3gigR9Ysfo,Ugw0TH6Wp5QuScPAOYl4AaABAg,neutro,positivo,
+c296,comentário,O Boticário (perfumes),mKXL3pmeQ48,Ugx52hR1AZtXD1hbSzx4AaABAg,nao_sobre_produto,positivo,
+c297,comentário,Havaianas,cqss007bzNM,Ugyry6wMi_OQcpbw8E54AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c298,comentário,iFood,2vbIX0xVjbU,UgwrlwMqa-QfaOKOh3l4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c299,comentário,BYD Dolphin Mini,vpxsH1_BLQk,UgzimnlVNOe3H88kvIR4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+c300,comentário,iFood,mPpMHjA0t18,UgxoLRMxsFxuCcacF6J4AaABAg,nao_sobre_produto,nao_sobre_produto,nao_sobre_produto
+t001,título,PlayStation 5,JkVfKLnEYsI,,neutro,neutro,neutro
+t002,título,Havaianas,BVn7LX7HddE,,neutro,positivo,
+t003,título,iPhone 17,zV6EGOwOGbU,,neutro,neutro,neutro
+t004,título,Havaianas,CV6P1Ma-oCM,,neutro,neutro,neutro
+t005,título,PlayStation 5,jEzcsV1-t2o,,neutro,neutro,neutro
+t006,título,iFood,SEhpKAJbFR0,,negativo,negativo,negativo
+t007,título,PlayStation 5,3dH7Pu7vlv4,,neutro,neutro,neutro
+t008,título,PlayStation 5,TaXbPhdRAhg,,neutro,neutro,neutro
+t009,título,O Boticário (perfumes),ZnXVYu8mSzc,,neutro,neutro,neutro
+t010,título,Havaianas,-tJEOs8Xz_s,,neutro,neutro,neutro
+t011,título,Havaianas,d_VdEMTHzs8,,neutro,neutro,neutro
+t012,título,BYD Dolphin Mini,vUpEn2LAjhM,,neutro,neutro,neutro
+t013,título,Havaianas,Zfl7C_HyZjg,,neutro,neutro,neutro
+t014,título,iPhone 17,M-EWSgaKTAs,,neutro,neutro,neutro
+t015,título,O Boticário (perfumes),kUFBYvK_tks,,neutro,neutro,neutro
+t016,título,BYD Dolphin Mini,6gEAsKBZhx4,,positivo,positivo,positivo
+t017,título,O Boticário (perfumes),PAXYDeRUBK4,,neutro,neutro,neutro
+t018,título,PlayStation 5,DAmtIKciFDw,,positivo,positivo,positivo
+t019,título,O Boticário (perfumes),_rftchmIKLY,,neutro,neutro,neutro
+t020,título,iPhone 17,Z7GB3W15Yko,,neutro,neutro,neutro
+t021,título,O Boticário (perfumes),Vu8z_hRaSYk,,neutro,neutro,neutro
+t022,título,iPhone 17,-xyEkKB-dR4,,neutro,neutro,neutro
+t023,título,BYD Dolphin Mini,pt8Gc9igQu4,,neutro,negativo,
+t024,título,iFood,mPpMHjA0t18,,neutro,misto,
+t025,título,PlayStation 5,nx7sUXQ_Gv4,,neutro,neutro,neutro
+t026,título,iFood,Kze2-aTG4CA,,neutro,positivo,
+t027,título,Havaianas,779eUGT5lxc,,neutro,neutro,neutro
+t028,título,iFood,JUMXOqzGCkE,,neutro,neutro,neutro
+t029,título,iPhone 17,dmDJiUFdvQ4,,neutro,positivo,
+t030,título,iFood,nZPVooJQV7Q,,nao_sobre_produto,negativo,
+t031,título,O Boticário (perfumes),dCRHxAPh-rk,,neutro,neutro,neutro
+t032,título,BYD Dolphin Mini,GLtu5oCY5gU,,neutro,neutro,neutro
+t033,título,O Boticário (perfumes),0EzoNm442rA,,neutro,positivo,
+t034,título,Havaianas,RpT2SQAY_Q4,,neutro,positivo,
+t035,título,iPhone 17,orMnldh_eec,,neutro,neutro,neutro
+t036,título,Havaianas,Isx47PDZFwU,,neutro,neutro,neutro
+t037,título,iFood,KVg3IInQdU8,,neutro,neutro,neutro
+t038,título,iPhone 17,hxKaad_w-PA,,neutro,neutro,neutro
+t039,título,iFood,dRr3D-dG78I,,neutro,neutro,neutro
+t040,título,PlayStation 5,30snM_qN5GE,,neutro,negativo,
+t041,título,iFood,Eqbu4tmW0rQ,,neutro,neutro,neutro
+t042,título,BYD Dolphin Mini,Y4MRYSX-3hA,,neutro,neutro,neutro
+t043,título,iPhone 17,bmYIPJ95JzU,,neutro,neutro,neutro
+t044,título,PlayStation 5,Kb5vWIbpT_8,,neutro,neutro,neutro
+t045,título,BYD Dolphin Mini,0BFqhytlckI,,neutro,neutro,neutro
+t046,título,Havaianas,1YaFS7v-6W0,,neutro,neutro,neutro
+t047,título,iPhone 17,9qiy6me97Xk,,neutro,neutro,neutro
+t048,título,O Boticário (perfumes),fmodkRAG1CI,,neutro,positivo,
+t049,título,BYD Dolphin Mini,C_R2YF1-Iqg,,neutro,neutro,neutro
+t050,título,BYD Dolphin Mini,4lfSudSZwto,,neutro,neutro,neutro

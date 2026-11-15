@@ -2,7 +2,7 @@
 
 Observações feitas durante a rotulagem manual dos comentários e títulos do YouTube (novembro de 2026). Servem de base para as seções de Discussão e Conclusão do relatório e de roteiro para a continuação do projeto.
 
-> Os números marcados com **[a preencher]** entram quando a rotulagem terminar.
+Amostra rotulada: 350 itens (300 comentários e 50 títulos), rotulados de forma independente por Pedro e Maria Alice.
 
 ## 1. Sentimento do título depende de quem olha
 
@@ -12,7 +12,7 @@ Observações feitas durante a rotulagem manual dos comentários e títulos do Y
 - *Sentimento orientado a alvo* e *detecção de posicionamento* (*stance detection*): a pergunta certa não é "o texto é positivo?", e sim "o texto é a favor ou contra X, do ponto de vista de Y?".
 - Títulos são **informativos por gênero**: eles anunciam o tipo de conteúdo ("unboxing", "review", "vale a pena?") e quase não carregam opinião.
 
-**Evidência.** [a preencher] % dos títulos rotulados como neutros.
+**Evidência.** Dos 50 títulos, 92% foram rotulados como neutros pelo Pedro e 74% pela Maria Alice. O kappa nos títulos foi de apenas 0,36: sem um ponto de vista definido, nem os rotuladores concordam.
 
 **Decisão no projeto atual.** O app não atribui sentimento ao título, ou o mostra apenas como informação, deixando explícita essa limitação. O sentimento vem dos comentários.
 
@@ -37,7 +37,7 @@ Observações feitas durante a rotulagem manual dos comentários e títulos do Y
 - **Filtragem de relevância:** em *social listening*, é a etapa que vem antes do sentimento.
 - **Classificação de intenção** (ou atos de fala): pergunta sobre o produto, comentário sobre o criador ou o vídeo, pedido, piada, spam.
 
-**Evidência.** [a preencher] % dos comentários rotulados como "não é sobre o produto".
+**Evidência.** Dos 300 comentários, 51% foram rotulados como "não é sobre o produto" pelo Pedro e 36% pela Maria Alice. É também o ponto de maior divergência: o kappa geral (5 classes) foi 0,48 (moderado), mas sobe para 0,63 (substancial) quando se olha só positivo, neutro e negativo nos itens que ambos consideraram sobre o produto. Ou seja, decidir **se** o comentário é sobre o produto é mais difícil do que decidir a polaridade. Exemplo típico: elogio ao youtuber ("ótimo vídeo") conta como positivo ou como fora do produto?
 
 **Impacto na avaliação.** A avaliação no YouTube é feita em duas partes:
 1. A proporção de ruído ("não é sobre o produto").
