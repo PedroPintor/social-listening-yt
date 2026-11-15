@@ -45,13 +45,15 @@ Amostra rotulada: 350 itens (300 comentários e 50 títulos), rotulados de forma
 
 **Ideia futura.** Substituir o rótulo único "não é sobre o produto" por categorias de intenção.
 
-## 4. O NER como filtro de menções, e seu limite
+## 4. Separar os comentários sobre o produto: NER e busca pelo nome
 
-**Uso no projeto.** O NER (GLiNER2) separa os comentários em dois grupos: os que **citam o produto ou a marca explicitamente** e os demais. Assim, quem usa o app vê primeiro o que fala diretamente do produto. Dá para avaliar esse filtro com a própria rotulagem, comparando "cita o produto" com o rótulo "não é sobre o produto" (precisão e revocação do filtro).
+**Hipótese testada.** Usar o NER (GLiNER2) como filtro, passando só os comentários que citam uma marca, produto ou empresa. A avaliação comparou o filtro com o rótulo "não é sobre o produto" (precisão e revocação).
 
-**Limite.** Muitos comentários relevantes não citam o nome do produto ("a bateria dura quanto?", "comprei ontem e chegou riscado"). O filtro por NER deixa esses comentários de fora, então "não cita" não significa "não é sobre o produto".
+**Uso no projeto.** Não funcionou (evidência abaixo). No app, a separação é feita pela **busca do nome do produto** e de apelidos, sem descartar comentários. O NER só **lista as marcas e produtos citados**, por exemplo os concorrentes. Ver [decisoes_de_escopo.md](decisoes_de_escopo.md).
 
-**Evidência** (notebook `05c_fluxo_do_app.ipynb`, 174 comentários com gabarito):
+**Limite.** Muitos comentários relevantes não citam o nome do produto ("a bateria dura quanto?", "comprei ontem e chegou riscado"). Então "não cita" não significa "não é sobre o produto".
+
+**Evidência** (notebook `05c_fluxo_do_app.ipynb`, 174 comentários com gabarito: os 86 sobre o produto, base das métricas de sentimento, mais os 88 "não é sobre o produto"):
 - **O NER não filtra.** O GLiNER2 acha alguma marca, produto ou empresa em ~85% dos comentários, e só ~50% dos que passam são sobre o produto, a mesma proporção de não filtrar. Isso vale para todos os limiares e categorias testados. Comentários do YouTube citam outras marcas, o youtuber e objetos comuns o tempo todo.
 - **Buscar o nome do produto é preciso, mas perde muito.** 91% dos comentários que citam o nome (ou apelidos) são sobre o produto, mas só 36% dos comentários sobre o produto citam o nome.
 

@@ -69,7 +69,7 @@ Foi utilizado o [GLiNER2 PT-BR](https://huggingface.co/ottema/gliner2-ptbr) (`ot
 
 ### Resultado da etapa
 
-Na mini-avaliação sintética, o GLiNER2 teve **F1 de 0,597** com correspondência exata de texto e categoria (precisão 0,451, revocação 0,881) e **F1 de 0,857** quando a categoria é ignorada. O modelo encontra quase todas as menções, mas repete o mesmo trecho em várias categorias (marca e empresa, principalmente) e confunde gírias como "mano" com pessoas. Aumentar o `threshold` quase não ajuda, porque as confianças ficam perto de 1,0. A avaliação é pequena e sintética; a avaliação definitiva será feita com comentários reais do YouTube rotulados manualmente.
+Na mini-avaliação sintética, o GLiNER2 teve **F1 de 0,597** com correspondência exata de texto e categoria (precisão 0,451, revocação 0,881) e **F1 de 0,857** quando a categoria é ignorada. O modelo encontra quase todas as menções, mas repete o mesmo trecho em várias categorias (marca e empresa, principalmente) e confunde gírias como "mano" com pessoas. Aumentar o `threshold` quase não ajuda, porque as confianças ficam perto de 1,0. A avaliação é pequena e sintética. A rotulagem dos comentários reais do YouTube não anotou entidades, então não há P/R/F1 por entidade em dados reais. Nos comentários reais, o NER foi avaliado como filtro de relevância (`05c`) e não serviu para isso. No app, ele só lista as marcas citadas (ver `docs/notas/decisoes_de_escopo.md`).
 
 ### Arquivos principais
 
@@ -95,7 +95,9 @@ A rede neural é o degrau do meio entre o TF-IDF (etapa 2) e o BERTimbau (etapa 
 |---|---|---|---|---|
 | TF-IDF + Regressão Logística (etapa 2) | 0,951 | 0,883 | 0,724 | 0,4 ms |
 | BiGRU, embeddings do zero | 0,942 | 0,868 | 0,696 | ~3 ms |
-| **BiGRU + NILC GloVe (ajustado)** | **0,957** | **0,892** | **0,739** | ~3,5 ms |
+| **BiGRU + NILC GloVe (ajustado)** | **0,957** | **0,892** | **0,739** | 8,9 ms* |
+
+\* Média das 3 sementes, como em `reports/04_resultados_rede_neural.csv`. Uma das medições foi feita com a máquina ocupada; nas outras duas, o tempo foi de ~3,5 ms. O modelo salvo (semente 42) tem F1 macro de 0,887, e é ele que o app e a avaliação no YouTube usam.
 
 As redes **do zero perderam** para o TF-IDF (as três arquiteturas empataram entre si). Com **embeddings pré-treinados do NILC ajustados**, a rede passou o baseline por pouco, mas de forma consistente nas 3 sementes. Ela corrigiu negações ("não tem igual entre os intermediários") e gírias ("top demais"), mas não a ironia. O ganho veio do **conhecimento prévio, e não da arquitetura**, o que reforça o uso do BERTimbau na etapa 5. Congelar os embeddings e usar o FastText do Facebook deram resultados piores.
 
@@ -107,8 +109,16 @@ As redes **do zero perderam** para o TF-IDF (as três arquiteturas empataram ent
 - `src-pln/reports/04_resultados_rede_neural.csv` e `04_execucoes_por_semente.csv` — resultados.
 - `src-pln/models/sentimento_rede_neural.pt` — melhor modelo (63 MB, fora do git; é recriado ao executar o notebook).
 
+## Etapa 5 — Transformers e avaliação no YouTube
+
+**Status:** concluída.
+
+- `05_transformers.ipynb` (Colab): XLM-R de tweets (zero-shot), BERTimbau congelado + RL e BERTimbau ajustado. O ajustado chega a F1 de 0,921 no RePro.
+- `05b_avaliacao_youtube.ipynb`: todos os modelos nos comentários do YouTube rotulados pelo grupo. O BERTimbau congelado + RL é o melhor (F1 0,807).
+- `05c_fluxo_do_app.ipynb`: o fluxo do app. O NER não serve como filtro, e nenhum modelo difere de forma significativa do TF-IDF.
+- Coleta e rotulagem: `coleta_youtube/README.md`. Resultados: `reports/05*.csv`.
+
 ## Próximas etapas
 
-- **Etapa 5:** Transformers e modelos pré-treinados.
-- **Etapa 6:** Chatbot ou aplicação multimodal.
-- **Etapa 7:** Integração, documentação e apresentação final.
+- **Etapa 6:** aplicação em Streamlit, sem chatbot. O classificador é o BERTimbau congelado, e o NER lista as marcas citadas. Justificativa em `docs/notas/decisoes_de_escopo.md`.
+- **Etapa 7:** integração, documentação e apresentação final.

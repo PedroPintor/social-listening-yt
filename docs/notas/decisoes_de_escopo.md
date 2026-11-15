@@ -22,21 +22,23 @@ Desvios em relação ao passo a passo do professor, com a justificativa que vai 
 
 ## Classificador do app: BERTimbau congelado + Regressão Logística
 
-**Evidência** (notebooks `05b` e `05c`, comentários do YouTube com gabarito):
+**Evidência** (notebooks `05b` e `05c`). "YouTube (86)" são os 86 comentários que os dois rotuladores marcaram como positivo, neutro ou negativo. As contas com 174 comentários (seção do NER e nota de limitações) somam a eles os 88 "não é sobre o produto".
 
 | Modelo | F1 RePro | F1 YouTube (86) | F1 neutro YouTube | Erro no resumo* | CPU, 300 comentários |
 |---|---|---|---|---|---|
 | TF-IDF + RL | 0,883 | 0,744 | 0,667 | 16 pp | 0,1 s |
-| BiGRU + GloVe ajustado | 0,892 | 0,739 | 0,595 | 11 pp | ~3 s |
+| BiGRU + GloVe ajustado | 0,887** | 0,739 | 0,595 | 11 pp | ~3 s |
 | XLM-R tweets (zero-shot) | 0,805 | 0,774 | 0,667 | 6 pp | ~60 s |
 | **BERTimbau congelado + RL** | 0,886 | **0,807** | **0,727** | 8 pp | ~50 s |
 | BERTimbau ajustado | **0,921** | 0,788 ± 0,031 | 0,671 | 11 pp | ~50 s |
 
 \* Maior diferença, em pontos percentuais, entre a proporção de positivo/neutro/negativo prevista e a real, nos comentários sobre o produto.
 
+\*\* Modelo salvo (semente 42), o mesmo avaliado no YouTube. A média das 3 sementes é 0,892. A latência (8,9 ms por comentário, `reports/04_resultados_rede_neural.csv`) também é a média das 3 sementes, e uma delas foi medida com a máquina ocupada.
+
 **Por que ele.** É o melhor no domínio real (YouTube) em F1 macro e no neutro, a classe mais difícil, e o resumo que ele mostra fica perto do real. Ele não especializa no estilo do RePro, porque só a Regressão Logística é treinada. O custo (~50 s para algumas centenas de comentários, ~450 MB de modelo) é aceitável para uma análise feita sob demanda, que já espera a coleta da API.
 
-**Ressalva honesta.** Com 86 comentários, nenhuma diferença contra o TF-IDF é estatisticamente significativa (bootstrap e McNemar, `05c`). A escolha se apoia na vantagem consistente em todas as métricas do domínio real, não em um teste significativo. Confirmar com mais dados rotulados do YouTube é trabalho futuro.
+**Ressalva honesta.** Com 86 comentários (147 no fluxo com filtro por NER), nenhuma diferença contra o TF-IDF é estatisticamente significativa (bootstrap e McNemar, `05c`). A escolha se apoia na vantagem consistente em todas as métricas do domínio real, não em um teste significativo. Confirmar com mais dados rotulados do YouTube é trabalho futuro.
 
 **Por que não os outros.**
 - **TF-IDF:** puxa para negativo (diria 53% negativo quando o real é 37%) e manda 59% do ruído para negativo. Fica como linha de base.
@@ -48,10 +50,17 @@ Desvios em relação ao passo a passo do professor, com a justificativa que vai 
 
 **O que testamos.** Usar o NER como filtro de relevância: passa o comentário em que o GLiNER2 acha uma marca, produto ou empresa (`05c`).
 
-**Resultado.** O filtro não separa: a proporção de ruído é a mesma antes (51%) e depois (50%) dele, em todos os limiares e categorias. O NER não está errando as entidades; a pergunta "o comentário tem uma entidade?" é que não equivale a "é opinião sobre o produto?". Comentários do YouTube citam o youtuber, outras marcas e objetos o tempo todo.
+**Resultado** (174 comentários: 86 sobre o produto e 88 não). O filtro não separa: a proporção de ruído é a mesma antes (51%) e depois (50%) dele, em todos os limiares e categorias. O NER não está errando as entidades; a pergunta "o comentário tem uma entidade?" é que não equivale a "é opinião sobre o produto?". Comentários do YouTube citam o youtuber, outras marcas e objetos o tempo todo.
 
 **Como o app usa.**
 - **Separação dos comentários:** busca do nome do produto e apelidos (91% de precisão). Nenhum comentário é descartado: o app mostra o grupo "citam o produto" (base do resumo principal) e o grupo "demais comentários", com o aviso de que muitos não são sobre o produto.
 - **NER:** lista as marcas e produtos citados nos comentários, por exemplo os concorrentes. Isso responde a uma pergunta real de monitoramento de marca ("com quem me comparam?"), algo que a busca pelo nome não faz, porque não sabe de antemão quais marcas procurar.
 
 **Trabalho futuro.** Um classificador de relevância treinado com os rótulos do YouTube.
+
+## B2W, conversão de notas e pseudo-rotulagem (itens 1, 2 e 6 do feedback da etapa 1)
+
+A proposta previa usar a B2W-Reviews01 como dado extra. Nenhum dos três pontos se aplica mais:
+- **Sobreposição RePro–B2W (item 1):** a B2W não foi usada, então não há risco de vazamento. Os experimentos usam só o RePro, com teste separado, e o YouTube apenas como teste.
+- **Conversão de nota em sentimento (item 2):** nenhuma nota foi convertida. O RePro já tem rótulo de sentimento dado por anotadores humanos, e os mistos ficaram fora do treino (`02`).
+- **Pseudo-rotulagem (item 6):** foi abandonada. Ela servia para aumentar o treino com a B2W, e o gargalo real se mostrou a troca de domínio para o YouTube, não a quantidade de avaliações de loja.
