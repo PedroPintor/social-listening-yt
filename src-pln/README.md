@@ -118,7 +118,8 @@ As redes **do zero perderam** para o TF-IDF (as três arquiteturas empataram ent
 - `05c_fluxo_do_app.ipynb`: o fluxo do app. O NER não serve como filtro, e nenhum modelo difere de forma significativa do TF-IDF.
 - Coleta e rotulagem: `coleta_youtube/README.md`. Resultados: `reports/05*.csv`.
 
-## Próximas etapas
+## Etapa 6 — Aplicação (Radar de Marca)
 
-- **Etapa 6:** aplicação em Streamlit, sem chatbot. O classificador é o BERTimbau congelado, e o NER lista as marcas citadas. Justificativa em `docs/notas/decisoes_de_escopo.md`.
-- **Etapa 7:** integração, documentação e apresentação final.
+**Status:** concluída.
+
+O app em Streamlit fica em `src/`, na raiz do projeto, e não usa chatbot. O classificador é o BERTimbau congelado + RL, e o NER lista as marcas citadas. A justificativa está em `docs/notas/decisoes_de_escopo.md`. As instruções para executar o app e o registro de falhas com entradas diferentes estão no [README da raiz](../README.md).

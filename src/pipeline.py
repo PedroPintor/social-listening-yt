@@ -11,6 +11,7 @@ Decisões e evidências em `docs/notas/decisoes_de_escopo.md` e no notebook
 from __future__ import annotations
 
 import json
+import os
 import re
 import sys
 import unicodedata
@@ -20,6 +21,9 @@ from pathlib import Path
 import pandas as pd
 
 RAIZ = Path(__file__).resolve().parents[1]
+# BERTimbau e GLiNER2 são baixados do Hugging Face para esta pasta do projeto (fora do git).
+# Precisa vir antes de importar o transformers ou o gliner2; apagar a pasta remove os modelos.
+os.environ.setdefault("HF_HOME", str(RAIZ / "modelos_baixados"))
 sys.path.insert(0, str(RAIZ / "src-pln" / "coleta_youtube"))
 from youtube import YouTube, estimar_unidades  # noqa: E402
 

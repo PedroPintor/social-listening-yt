@@ -6,12 +6,18 @@
 
 # Etapa 4: embeddings pré-treinados (baixados por src-pln/utils/baixar_embeddings.py) e modelos treinados
 src-pln/data/embeddings/
-src-pln/models/
+src-pln/models/*
+# exceção: o classificador do app (10 KB, só os pesos da Regressão Logística)
+!src-pln/models/bertimbau_congelado_rl.joblib
+# Pesos do BERTimbau e do GLiNER2 que o app baixa do Hugging Face (~1,6 GB)
+modelos_baixados/
 
 # Coleta do YouTube: dados brutos, cache e amostras (os termos da API desaconselham redistribuir)
 src-pln/coleta_youtube/dados/
 # App: análises salvas (contêm textos de comentários)
 src/analises/
+# Slides em HTML: têm comentários reais do YouTube (o PDF final é decidido à parte)
+apresentacao/*.html
 
 # Python e Jupyter
 __pycache__/

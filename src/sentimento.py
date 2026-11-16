@@ -6,16 +6,21 @@ Regressão Logística, treinada no RePro por `treinar_classificador.py`, dá a c
 """
 from __future__ import annotations
 
+import os
 from pathlib import Path
 
-import joblib
-import numpy as np
-import torch
-from transformers import AutoModel, AutoTokenizer
+RAIZ = Path(__file__).resolve().parents[1]
+# Pesos baixados do Hugging Face ficam na pasta do projeto, e não na pasta global do usuário.
+# Precisa vir antes de importar o transformers. Apagar a pasta remove os modelos.
+os.environ.setdefault("HF_HOME", str(RAIZ / "modelos_baixados"))
+
+import joblib  # noqa: E402
+import numpy as np  # noqa: E402
+import torch  # noqa: E402
+from transformers import AutoModel, AutoTokenizer  # noqa: E402
 
 MODELO_BERT = "neuralmind/bert-base-portuguese-cased"
 MAX_LEN = 128
-RAIZ = Path(__file__).resolve().parents[1]
 CAMINHO_RL = RAIZ / "src-pln" / "models" / "bertimbau_congelado_rl.joblib"
 
 
